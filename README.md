@@ -79,6 +79,32 @@ The PowerBI reports include interactive dashboards with:
 - **Temporal Analysis**: Fraud patterns by hour and day
 - **User Risk Analysis**: Identification of high-risk users
 - **Interactive Filters**: Dynamic filtering by date, category, and payment method
+- 
+#### Dashboard Highlights
+
+**Dashboard 1: Executive Summary**
+- Overview KPIs showing 1,056 total transactions with a 0.11% fraud rate
+- $38,990 in total fraud detected across 112 fraudulent transactions
+- Visual breakdown of transaction status (89.39% legitimate vs 10.61% fraud)
+- Category distribution showing fraud incidents by product type (Electronics, Sports, Home, Food, Clothing)
+
+![Executive Dashboard](https://raw.githubusercontent.com/ApostolicDA/fraud-detection-eda/main/powerbi_reports/dashboard_summary.png)
+
+**Dashboard 2: Payment Method & Risk Analysis**
+- Comprehensive payment method fraud rate comparison (Bank: 12%, PayPal: 11%, Crypto: 10%, Card: 10%)
+- Transaction volume vs fraud count by payment method
+- Risk ranking showing bank transfers as highest-risk (Rank 1)
+- Temporal and categorical fraud patterns with interactive filters
+
+![Payment Method Analysis](https://raw.githubusercontent.com/ApostolicDA/fraud-detection-eda/main/powerbi_reports/dashboard_payment_analysis.png)
+
+**Dashboard 3: Temporal & Category Deep Dive**
+- Fraud transactions by daily patterns showing concentration analysis
+- Category-level heatmap identifying high-risk periods and product types
+- Detailed breakdown showing electronics as most vulnerable category (25+ incidents)
+- Time-series visualization of fraud trends across transaction lifecycle
+
+![Temporal Analysis](https://raw.githubusercontent.com/ApostolicDA/fraud-detection-eda/main/powerbi_reports/dashboard_temporal_analysis.png)
 
 ## Key Findings
 
