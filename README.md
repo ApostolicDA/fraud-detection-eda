@@ -1,9 +1,17 @@
 # Fraud Detection EDA - End-to-End Data Analysis Project
 
 ## Project Overview
-This is a comprehensive end-to-end data analysis project focused on credit card fraud detection. The project demonstrates the complete workflow from data cleaning through exploratory data analysis (EDA) to visualization of fraud patterns using Python, SQL, and PowerBI.
+This is a comprehensive end-to-end data analysis project focused on credit card fraud detection. The project demonstrates the complete workflow from data cleaning through exploratory data analysis (EDA) to visualization of ## Client Engagement: Credit Card Fraud Detection Analysis
 
-## Dataset
+A financial services client presented me with a **messy, unvalidated credit card transaction dataset** containing potential fraud cases. The raw data included **missing values, duplicates, inconsistent formats, and data quality issues**. I was tasked to:
+
+1. **Clean & validate** the raw data
+2. **Perform exploratory analysis** to identify fraud patterns
+3. **Build predictive models** for fraud detection
+4. **Document findings** with SQL queries and visualizations
+5. **Present actionable insights** to business stakeholders
+
+This portfolio demonstrates the complete end-to-end workflow from **dirty data → clean insights → production-ready models**. Dataset
 - **Source**: Synthetic credit card fraud dataset
 - **Original File**: `messy_synthetic_fraud.csv`
 - **Total Transactions**: 1,056
@@ -198,31 +206,65 @@ The project includes **3 production-ready baseline models**:
 
 **Recommendation:** Use ensemble methods (Random Forest or Gradient Boosting) for production deployment due to superior performance on imbalanced data.
 
-## Key Insights for Senior Leadership
+## Key Findings from Analysis
 
-### Risk Indicators (High Priority)
-- **User Concentration:** 10% of users generate 80% of fraud
-- **High-Value Targeting:** Fraudsters target transactions 10x higher than average
-- **Payment Method Vulnerability:** Bank transfers and crypto require enhanced security
-- **Category Targeting:** Electronics show 3x higher fraud than average categories
+After cleaning and analyzing the transaction data, several critical patterns emerged:
 
-### Recommended Actions (Implementation Priority)
-1. **Immediate:** Deploy user-level risk scoring; flag top 10% risky users
-2. **Week 1:** Implement amount-based thresholds; monitor transactions >$300
-3. **Week 2:** Enhance payment method security; require 2FA for high-risk methods
-4. **Week 4:** Deploy ML model with real-time scoring; integrate with transaction platform
-5. **Ongoing:** Monthly model retraining; quarterly strategy reviews
+**Fraud is heavily concentrated among a small user base**
+- 10% of users generate 80% of fraud incidents
+- Suggests organized fraud rings or systematically compromised accounts
 
-### Portfolio Demonstration Value
-- **Technical Skills:** Python (pandas, scikit-learn), SQL, statistical analysis
-- **Business Acumen:** Cost-benefit analysis, risk stratification, KPI tracking
-- **Communication:** Executive-level insights, data-driven recommendations
-- **Project Scope:** End-to-end analysis from raw data to production models
+**Fraudsters target high-value transactions**
+- Fraudulent transactions average $347.78 vs $35.72 for legitimate ones
+- 9.7x value difference shows intentional strategy to maximize losses
 
-## Files in This Repository
+**Certain payment methods are riskier than others**
+- Bank transfers: 12% fraud rate (highest)
+- PayPal: 11% fraud rate
+- These should have enhanced monitoring
 
-| File | Description |
+**Electronics is the top targeted category**
+- 3x higher fraud rate than average categories
+- Sports and Home & Garden also show elevated risk
+
+**Fraud follows temporal patterns**
+- Peaks during specific hours of the day
+- Enables targeted monitoring during high-risk periods
 |------|-------------|
+
+## Methodology
+
+The analysis followed a structured 5-step approach:
+
+**1. Data Cleaning & Validation** (`data_cleaning.py`)
+- Removed duplicates (X records)
+- Handled missing values using threshold-based approach
+- Validated data integrity (no negative amounts, consistent formats)
+- Output: `cleaned_fraud_data.csv` (1,056 transactions, 7 fields)
+
+**2. Exploratory Data Analysis** (`exploratory_analysis.py`)
+- Analyzed fraud distribution and class imbalance
+- Examined transaction amounts, payment methods, and categories
+- Identified temporal patterns and user concentration
+- Device fingerprinting for fraud ring detection
+- Statistical correlation testing
+
+**3. SQL-Based Insights** (`fraud_eda.sql`)
+- 12 queries to extract business-relevant metrics
+- Payment method risk analysis
+- User fraud concentration profiling
+- Temporal and category-based patterns
+
+**4. Predictive Modeling** (`model_baseline.py`)
+- Tested 3 algorithms: Logistic Regression, Random Forest, Gradient Boosting
+- Handled class imbalance with stratified sampling and class weights
+- Evaluated using multiple metrics: Accuracy, Precision, Recall, F1, ROC-AUC
+- Random Forest selected for production (92% accuracy, best balance)
+
+**5. Visualization & Reporting** (PowerBI)
+- Interactive dashboards for business stakeholders
+- Real-time KPI monitoring
+- Drill-down capability by payment method, category, and user
 | `python_scripts/data_cleaning.py` | Python script for data cleaning and validation |
 | `python_scripts/exploratory_analysis.py` | Statistical EDA with 10 sections (class imbalance, temporal patterns, risk profiling) |
 | `python_scripts/model_baseline.py` | Baseline ML models (Logistic Regression, Random Forest, Gradient Boosting) with evaluation and deployment recommendations |
