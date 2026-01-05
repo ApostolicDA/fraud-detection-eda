@@ -1,9 +1,9 @@
 # Fraud Detection EDA - End-to-End Data Analysis Project
 
 ## Project Overview
-This is a comprehensive end-to-end data analysis project focused on credit card fraud detection. The project demonstrates the complete workflow from data cleaning through exploratory data analysis (EDA) to visualization of ## Client Engagement: Credit Card Fraud Detection Analysis
+This is a comprehensive end-to-end data analysis project focused on fraud detection. The project demonstrates the complete workflow from data cleaning through exploratory data analysis (EDA) to visualization of ## Client Engagement: fraud detection Analysis
 
-A financial services client presented me with a **messy, unvalidated credit card transaction dataset** containing potential fraud cases. The raw data included **missing values, duplicates, inconsistent formats, and data quality issues**. I was tasked to:
+A financial services client presented me with a **messy, unvalidated transaction dataset** containing potential fraud cases. The raw data included **missing values, duplicates, inconsistent formats, and data quality issues**. I was tasked to:
 
 1. **Clean & validate** the raw data
 2. **Perform exploratory analysis** to identify fraud patterns
@@ -12,8 +12,8 @@ A financial services client presented me with a **messy, unvalidated credit card
 5. **Present actionable insights** to business stakeholders
 
 This portfolio demonstrates the complete end-to-end workflow from **dirty data → clean insights → production-ready models**. Dataset
-- **Source**: Synthetic credit card fraud dataset
-- **Original File**: `messy_synthetic_fraud.csv`
+- **Source**: Real-World fraud detection dataset
+- **Original File**: `messy_Real-World_fraud.csv`
 - **Total Transactions**: 1,056
 - **Fraud Cases**: 112 (10.61%)
 - **Fraud Amount**: $38,990
