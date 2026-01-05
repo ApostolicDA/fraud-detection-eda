@@ -12,8 +12,8 @@ A financial services client presented me with a **messy, unvalidated transaction
 5. **Present actionable insights** to business stakeholders
 
 This portfolio demonstrates the complete end-to-end workflow from **dirty data → clean insights → production-ready models**. Dataset
-- **Source**: Real-World fraud detection dataset
-- **Original File**: `messy_Real-World_fraud.csv`
+- **Source**: messy_fraud_detection.csv
+- **Original File**: `messy_fraud_detection.csv`
 - **Total Transactions**: 1,056
 - **Fraud Cases**: 112 (10.61%)
 - **Fraud Amount**: $38,990
