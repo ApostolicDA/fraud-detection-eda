@@ -96,7 +96,7 @@ The PowerBI reports include interactive dashboards with:
 - Risk ranking showing bank transfers as highest-risk (Rank 1)
 - Temporal and categorical fraud patterns with interactive filters
 
-![Payment Method Analysis](https://raw.githubusercontent.com/ApostolicDA/fraud-detection-eda/main/powerbi_reports/dashboard_payment_analysis.png)
+![Payment Method Analysis](./Screenshot%202026-01-04%20001831.png)
 
 **Dashboard 3: Temporal & Category Deep Dive**
 - Fraud transactions by daily patterns showing concentration analysis
@@ -104,7 +104,7 @@ The PowerBI reports include interactive dashboards with:
 - Detailed breakdown showing electronics as most vulnerable category (25+ incidents)
 - Time-series visualization of fraud trends across transaction lifecycle
 
-![Temporal Analysis](https://raw.githubusercontent.com/ApostolicDA/fraud-detection-eda/main/powerbi_reports/dashboard_temporal_analysis.png)
+![Temporal Analysis](./Screenshot%202026-01-04%20001854.png)
 
 ## Key Findings
 
