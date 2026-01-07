@@ -88,7 +88,7 @@ The PowerBI reports include interactive dashboards with:
 - Visual breakdown of transaction status (89.39% legitimate vs 10.61% fraud)
 - Category distribution showing fraud incidents by product type (Electronics, Sports, Home, Food, Clothing)
 
-![Executive Dashboard](https://raw.githubusercontent.com/ApostolicDA/fraud-detection-eda/main/powerbi_reports/dashboard_summary.png)
+![Executive Dashboard](https://raw.githubusercontent.com/ApostolicDA/fraud-detection-eda/main/powerbi_reports/Screenshot 2026-01-04 001812.png)
 
 **Dashboard 2: Payment Method & Risk Analysis**
 - Comprehensive payment method fraud rate comparison (Bank: 12%, PayPal: 11%, Crypto: 10%, Card: 10%)
