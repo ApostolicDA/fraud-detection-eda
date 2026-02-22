@@ -1,10 +1,10 @@
-# Fraud Risk Analysis & Detection
+# Fraud Risk Analysis & Business Intelligence
 
 ## Executive Summary
 
 A financial services dataset containing 1,056 transactions was provided with suspected fraud activity. However, the data was inconsistent and not reliable enough for decision-making.
 
-I validated and cleaned the dataset, identified key fraud risk patterns, quantified financial exposure, and built predictive models to support smarter fraud prevention strategies.
+I validated and cleaned the dataset, identified key fraud risk patterns, quantified financial exposure, and built executive dashboards to support smarter fraud prevention strategies.
 
 ### Key Outcomes
 - **Fraud Rate:** 10.61% (112 of 1,056 transactions)  
@@ -12,7 +12,7 @@ I validated and cleaned the dataset, identified key fraud risk patterns, quantif
 - **Fraud transactions were 9.7x higher in value** than legitimate transactions  
 - **10% of users generated over 80% of fraud incidents**
 
-This project demonstrates business-focused fraud analysis — from raw data to actionable risk intelligence.
+This project demonstrates business-focused fraud analysis — transforming raw data into actionable risk intelligence.
 
 ---
 
@@ -46,7 +46,7 @@ Output: A clean, analysis-ready dataset.
 
 ---
 
-### 2. Risk Analysis (SQL)
+### 2. Fraud Risk Analysis (SQL)
 
 Using structured SQL analysis, I identified:
 
@@ -112,24 +112,6 @@ Built interactive dashboards designed for business stakeholders:
 - Time-based trend visualization  
 
 ![Temporal Analysis](./Screenshot%202026-01-04%20001854.png)
-
----
-
-## Predictive Modeling
-
-Built and evaluated multiple fraud detection models.
-
-Best performing model achieved:
-
-- ~94% ROC-AUC  
-- Strong recall to reduce costly missed fraud  
-
-Model evaluation was framed around business trade-offs:
-
-- Missed fraud ≈ $100 loss  
-- False alarm ≈ $10 investigation cost  
-
-This ensured optimization for financial impact — not just model accuracy.
 
 ---
 
