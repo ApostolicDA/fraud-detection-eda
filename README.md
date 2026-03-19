@@ -153,4 +153,7 @@ fraud-detection-eda/
 - Business-first analytical thinking  
 - Risk prioritization ability  
 - Clear communication for non-technical stakeholders  
-- End-to-end ownership from raw data to strategic recommendation  
+- End-to-end ownership from raw data to strategic recommendation
+
+*This was an independent project — original problem framing, 
+analysis approach, and business recommendations are entirely my own.*
